@@ -1,0 +1,95 @@
+.detail {
+    padding: 1rem 1rem 1.25rem;
+
+    &__icon {
+        height: 50px;
+        width: 30px;
+    }
+    &__header {
+        display: flex;
+        height: 60px;
+
+        > img {
+            margin-top: auto;
+            margin-bottom: auto;
+            max-width: 200px;
+        }
+    }
+
+    &__container {
+        max-width: 1000px;
+        margin: 2rem auto 1rem;
+    }
+
+    &__airportDetail {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+        padding: 12px 24px;
+
+        &__map {
+            height: 200px;
+            width: 100%;
+            @media only screen and (min-width: 1024px) {
+                width: 300px;
+            }
+            margin-top: 12px;
+        }
+
+        &__title {
+            color: #e40000;
+            font: {
+                size: 36px;
+                weight: 600;
+            }
+        }
+
+        &__break {
+            margin-bottom: 24px;
+
+        }
+
+        &__details {
+            margin-bottom: 12px;
+
+            &__container {
+                display: flex;
+                flex-direction: column;
+                @media only screen and (min-width: 1024px) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+        &__label {
+            font: {
+                size: 24px;
+                weight: 400;
+            }
+            padding-right: 12px;
+            color: #e40000;
+        }
+
+        &__value {
+            font: {
+                size: 24px;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 1rem;
+        width: 100px;
+        height: 40px;
+        background: #e40000;
+        color: white;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+        font-size: 20px;
+        font-weight:400;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

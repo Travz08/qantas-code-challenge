@@ -1,0 +1,75 @@
+.master {
+    padding: 1rem 1rem 6.25rem;
+    &__header {
+        display: flex;
+        height: 60px;
+
+        > img {
+            margin-top: auto;
+            margin-bottom: auto;
+            max-width: 200px;
+        }
+    }
+    &__loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    &__airports {
+        
+        background-color: #fff;
+        margin: 0 auto;
+        border-radius: 4px;
+        box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+        max-width: 500px;
+        &__icon {
+            width: 10px;
+        }
+
+        padding: 12px 24px;
+
+        &__item {
+            > * {
+                text-decoration: none;
+            }
+            color: black;
+            display: flex;
+            padding: 1rem;
+            justify-content: space-between;
+            text-decoration: none;
+            &:visited {
+                text-decoration: none;
+            }
+
+
+            &:not(:last-child) {
+                border-bottom: #e40000 1px solid;
+            }
+
+            &:hover {
+                background: #f4f4f4;
+                cursor: pointer;
+            }
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__container {
+                display: flex;
+
+                &:first-child {
+                    padding-bottom: 8px;
+                }
+            }
+
+            &__label {
+                color: #e40000;
+                padding-right: 10px;
+            }
+        }
+    }
+}
